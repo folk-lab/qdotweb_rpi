@@ -16,7 +16,7 @@ Use:
 - To request data:
 
     - r = requests.post('http://localhost:5000/read', data={'device':'DEVICE_NAME', 'command':'PARAM_SENT_TO_READ_FUNCTION'})
-        - Replace local host with the host of the address of the rpi on the network. 
+        - Replace local host with the the address of the rpi on the network. 
 
     - jr = r.json()
 
