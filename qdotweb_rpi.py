@@ -17,7 +17,7 @@ app = Flask(__name__)
 devices = []
 
 def format_devices_table(devlist):
-    """ put instruments list into HTML table """
+    """ put devices list into HTML table """
     table = '<table border="1" cellpadding="5" cellspacing="5">'
     table += '<caption>List of available resources:</caption>'
     table += '<tr> <th>Device(s)</th> </tr>'
