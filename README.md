@@ -1,5 +1,6 @@
 # qdotweb_rpi
-A flask framework for gathering data from devices connects to Raspberry Pis over a network.
+
+A flask wrapper for gathering data from devices/sensors connected to a Raspberry Pi over a network.
 
 Setup:
 
