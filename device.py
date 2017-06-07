@@ -45,21 +45,21 @@ DEVICE_NAMES = ["P/T Sensor", "T Sensor"]
 ##########################################
 
 def user_defined_data_method(nm, cmd):
-    #Pressure Sensor Celcius
-    if nm==DEVICE_NAMES[0] and cmd == "PS C":
-        return read_temp_pressure_sensor()[0]
-    #Pressure Sensor Farenheight
-    if nm==DEVICE_NAMES[0] and cmd == "PS F":
-        return read_temp_pressure_sensor()[1]
-    #Pressure Sensor Pressure
-    if nm==DEVICE_NAMES[0] and cmd == "PS P":
-        return read_temp_pressure_sensor()[2]
-    #Temperature Sensor Celcius
-    if nm==DEVICE_NAMES[0] and cmd == "TS C":
-        return read_temp_sensor()[0]
-    #Temperature Sensor Farenheight
-    if nm==DEVICE_NAMES[0] and cmd == "TS F":
-        return read_temp_sensor()[1]
+	#Pressure Sensor Celcius
+	if nm==DEVICE_NAMES[0] and cmd == "PS C":
+		return read_temp_pressure_sensor()[0]
+	#Pressure Sensor Farenheight
+	if nm==DEVICE_NAMES[0] and cmd == "PS F":
+		return read_temp_pressure_sensor()[1]
+	#Pressure Sensor Pressure
+	if nm==DEVICE_NAMES[0] and cmd == "PS P":
+		return read_temp_pressure_sensor()[2]
+	#Temperature Sensor Celcius
+	if nm==DEVICE_NAMES[0] and cmd == "TS C":
+		return read_temp_sensor()[0]
+	#Temperature Sensor Farenheight
+	if nm==DEVICE_NAMES[0] and cmd == "TS F":
+		return read_temp_sensor()[1]
 
 #########################################
 ######### User Defined Interface ########
