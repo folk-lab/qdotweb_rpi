@@ -1,6 +1,6 @@
 # qdotweb_rpi
 
-A flask wrapper for gathering data from devices/sensors connected to a Raspberry Pi over a network. An example is already installed for reading from a pressure or temperature sensor (connected to Pi) over a network in the Sensors branch.
+A flask wrapper for gathering data from devices/sensors connected to a server over a network. Here is an example for reading a pressure or temperature sensor (connected to a Raspberry Pi) over the lab network.
 
 Setup:
 
@@ -9,10 +9,14 @@ Setup:
 
 Use:
 
-- For example look at Sensor Branch
+- Import Requests
+- r = requests.post('http://localhost:5000/read', data={'device':'DEVICE_NAME', 'command':'PARAM_SENT_TO_READ_FUNCTION'})
+        - Replace local host with the the address of the rpi on the network. 
+- jr = r.json()
+- print(jr)
 
 TODO:
 
-- Add devices request to return a list of devices setup on the server
-- Ass a secure Login form for the web application
+- Add a devices request to return a list of devices setup on the server
+- Add a secure Login form for the web application
 
