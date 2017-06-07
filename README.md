@@ -14,5 +14,5 @@ Use:
 TODO:
 
 - Add devices request to return a list of devices setup on the server
-- Ass a secure Login form for the web application
+- Add a secure Login form for the web application
 
