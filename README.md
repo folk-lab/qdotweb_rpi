@@ -11,7 +11,8 @@ Use:
 
 - Import Requests
 - r = requests.post('http://localhost:5000/read', data={'device':'DEVICE_NAME', 'command':'PARAM_SENT_TO_READ_FUNCTION'})
-        - Replace local host with the the address of the rpi on the network. 
+        - Replace local host with the the address of the rpi on the network 
+- Look in the devices.py file for device names and commands to use
 - jr = r.json()
 - print(jr)
 
